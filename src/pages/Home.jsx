@@ -1,16 +1,16 @@
 import React from 'react'
 import Main from '../components/Main'
 import Row from '../components/Row'
-import request from '../Requests'
+import requests from '../Requests'
 
 function Home() {
   return (
     <div>
         <Main/>
-        <Row title='UpComing' fetchURL={request.requestUpcoming}/>
-        <Row title='Popular' fetchURL={request.requestPopular}/>
-        <Row title='Trending' fetchURL={request.requestTrending}/>
-        <Row title='Top Rated' fetchURL={request.requestTopRated}/>
+        <Row title='UpComing' fetchURL={requests.requestUpcoming}/>
+        <Row title='Popular' fetchURL={requests.requestPopular}/>
+        <Row title='Trending' fetchURL={requests.requestTrending}/>
+        <Row title='Top Rated' fetchURL={requests.requestTopRated}/>
         
 
     </div>
